@@ -1,0 +1,174 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Righteous", cursive;
+}
+body{
+  background-color: #068a80;
+}
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+.backround {
+  background: #000;
+  z-index: 100000;
+}
+
+.logo {
+  width: 80px;
+}
+
+.menu-btn {
+  color: #068a80;
+  text-decoration: none;
+  font-size: 25px;
+}
+.main {
+  z-index: 99;
+  background-color: #068a80;
+  height: 150vh;
+}
+
+.my-photo {
+  width: 570px;
+}
+.main-head{
+  padding-bottom: 70px;
+}
+
+.typing-container {
+  width: 400px;
+  text-align: center;
+  display: flex;
+  justify-content: start;
+  text-align: start;
+  flex-direction: column;
+
+  color: rgb(0, 0, 0);
+}
+
+.auto-typing-1{
+  font-size: 25px;
+}
+.auto-typing-2{
+  font-size: 40px;
+}
+.typing-text {
+  color: rgb(255, 255, 255);
+}
+
+.typing-text::after {
+  content: "|";
+  animation: blink 0.5s step-end infinite;
+}
+.main-text{
+  padding-top: 100px;
+  display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #000;
+   font-size: 25px;
+   background-color: #068a80;
+
+
+}
+
+@media screen and (max-width: 800px) {
+  .logo {
+  width: 50px;
+}
+.menu-btn {
+  
+  font-size: 15px;
+}
+  .my-photo {
+  width: 300px;
+}
+.main-head{
+  padding-bottom: 60px;
+}
+  .typing-container{
+    width: 200px;
+  }
+.auto-typing-1{
+  width: 250px;
+  font-size: 10px;
+}
+.auto-typing-2{
+   width: 250px;
+  font-size: 25px;
+}
+.main-text{
+  font-size: 18px;
+  padding-top: 80px;
+}
+
+}
+@media screen and (max-width: 600px) {
+  .logo {
+  width: 50px;
+}
+.menu-btn {
+  
+  font-size: 15px;
+}
+  .my-photo {
+  width: 200px;
+}
+.main-head{
+  padding-bottom: 50px;
+}
+  .typing-container{
+    width: 150px;
+  }
+.auto-typing-1{
+  width: 180px;
+  font-size: 10px;
+}
+.auto-typing-2{
+   width: 180px;
+  font-size: 20px;
+}
+.main-text{
+  font-size: 15px;
+  padding-top: 60px;
+}
+
+}
+@media screen and (max-width: 350px) {
+  .logo {
+  width: 50px;
+}
+.menu-btn {
+  
+  font-size: 10px;
+}
+  .my-photo {
+  width: 150px;
+}
+.main-head{
+  padding-bottom: 30px;
+}
+  .typing-container{
+    width: 100px;
+  }
+.auto-typing-1{
+  width: 180px;
+  font-size: 8px;
+}
+.auto-typing-2{
+   width: 180px;
+  font-size: 15px;
+}
+.main-text{
+  font-size: 10px;
+  padding-top: 0px;
+}
+
+}
