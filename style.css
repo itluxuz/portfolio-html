@@ -70,12 +70,17 @@ body{
 .main-text{
   padding-top: 100px;
   display: flex;
+  
    align-items: center;
    justify-content: center;
    color: #000;
    font-size: 25px;
    background-color: #068a80;
 
+
+}
+.main-text ul li span {
+color: #fff;
 
 }
 
@@ -140,6 +145,7 @@ body{
   padding-top: 60px;
 }
 
+
 }
 @media screen and (max-width: 350px) {
   .logo {
@@ -167,8 +173,32 @@ body{
   font-size: 15px;
 }
 .main-text{
+  width: 100%;
   font-size: 10px;
   padding-top: 0px;
 }
+
+}
+@media screen and (max-width: 250px){
+ .main-text{
+  width: 100%;
+  font-size: 6px;
+  padding-top: 0px;
+}
+  .typing-container{
+    width: 80px;
+  }
+.auto-typing-1{
+  width: 80px;
+  font-size: 5px;
+}
+.auto-typing-2{
+   width: 80px;
+  font-size: 10px;
+}
+ .my-photo {
+  width: 130px;
+}
+
 
 }
