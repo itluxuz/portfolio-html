@@ -6,6 +6,11 @@
   font-family: "Righteous", cursive;
   border: 0;
 }
+.socials a{
+font-size: 20px;
+color: #fff;
+
+}
 body{
   background-color: #068a80;
 }
@@ -115,6 +120,7 @@ color: #fff;
    width: 250px;
   font-size: 25px;
 }
+
 .main-text{
   font-size: 18px;
   padding-top: 80px;
@@ -193,6 +199,11 @@ color: #fff;
 .auto-typing-2{
    width: 180px;
   font-size: 13px;
+}
+.socials a{
+font-size: 10px;
+color: #fff;
+
 }
 .main-text{
   width: 100%;
