@@ -179,11 +179,11 @@ color: #fff;
 }
 
 }
-@media screen and (max-width: 250px){
+@media screen and (max-width: 300px){
  .main-text{
   width: 100%;
-  font-size: 6px;
-  padding-top: 0px;
+  font-size: 7px;
+  padding-top: -20px;
 }
   .typing-container{
     width: 80px;
