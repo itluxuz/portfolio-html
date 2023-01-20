@@ -131,7 +131,9 @@ body {
   }
 }
 @media screen and (max-width: 600px) {
-  
+  .kotta-home{
+  width: 230px !important;
+}
 .ism-home{
   
   width: 120px  !important;
@@ -215,9 +217,7 @@ body {
 }
 @media screen and (max-width: 350px) {
   
-.kotta-home{
-  width: 230px !important;
-}
+
   .swiper {
     transform: scale(0.6);
   }
@@ -458,7 +458,7 @@ flex-direction: column;
 }
 
 .kotta-home{ 
-  width: 450px;
+  width: 540px;
   height: 100px;
    border-radius: 10px;
    background-color: #fff;
