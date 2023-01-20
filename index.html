@@ -242,91 +242,105 @@
     <div class="main">
       <div class="container">
         <div class="main-head d-flex align-items-center justify-content-evenly">
-          <section class="typing-container">
-            <h5 class="auto-typing-1">Hello. My name's Adbulaziz</h5>
-            <p class="auto-typing-2">
-              I'm a
-              <span class="typing-text"> </span>
-            </p>
-            <div class="socials">
+          <div>
+            <section class="typing-container d-block">
+              <h5 class="auto-typing-1">Hello. My name's Adbulaziz</h5>
+              <p class="auto-typing-2">
+                I'm a
+                <span class="typing-text"> </span>
+              </p>
+            </section>
+
+            <div class="socials d-flex gap-2">
               <a href="https://www.instagram.com/it_lux_uzb/"
-                ><i class="fa-brands fa-instagram"></i
+                ><i class="fa-brands fa-instagram fs-4"></i
               ></a>
               <a href="https://t.me/az1zov1ch_a"
-                ><i class="fa-brands fa-telegram"></i
+                ><i class="fa-brands fa-telegram fs-4"></i
               ></a>
               <a href="https://github.com/itluxuz"
-                ><i class="fa-brands fa-github"></i
+                ><i class="fa-brands fa-github fs-4"></i
               ></a>
-              <a href="tel:+998977401448"><i class="fa-solid fa-phone"></i></a>
+              <a href="tel:+998977401448"
+                ><i class="fa-solid fa-phone fs-4"></i
+              ></a>
             </div>
-          </section>
-
+          </div>
           <img class="my-photo img-fluid" src="./my-photo.png" alt="" />
         </div>
-        <div class="main-text d-flex">
-          <ul>
-            <li><span>Name :</span> Latifjonov Abdulaziz Azizovich</li>
-            <li><span>Year: </span>2006.02.18</li>
-            <li><span>Hard Skills:</span> Front End, SMM, Mobilography</li>
-            <li>
-              <span>Soft Skills:</span> Html, CSS, Bootstrap, JavaScript,
-              ReactJS
-            </li>
-            <li>
-              <span>Target :</span> Opening a large IT and Marketing company
-            </li>
-          </ul>
-        </div>
         
+<hr/>
+<h1 class="about-me"> Aboute me</h1>
+        <div class="obshi-home ">
+          <div class="ism-home  " ><i class="fa-solid fa-circle-user"></i>
+          <p>Latifjonov Abdulaziz Azizovich</p>
+        <p>2006</p> 
+      <p>Tashkent, Uzbekistan</p></div>
+          <div class="itali-home d-flex " >
+            <div class="kub "><i class="fa-solid fa-bullhorn"></i>
+            <p>SMM Manager</p></div>
+            <div class="kub "><i class="fa-solid fa-video"></i>
+            <p>Mobilograph</p></div>
+            <div class="kub     "> <i class="fa-solid fa-laptop-code"></i>
+            <p>Programmer</p></div>
+          </div>
+          <div class="itali-home d-block d-sm-flex">
+            <div class="d-flex ittali-home">
+            <div class="kubcha  "> <i class="fa-solid fa-bullseye"></i> <p>Targeting  </p></div>
+            <div class="kubcha  "> <i class="fa-solid fa-people-group"></i> <p>Team building  </p></div>
+            <div class="kubcha  "> <i class="fa-solid fa-circle-play"></i></i> <p>Content making  </p></div>
+            </div><div class="d-flex ittali-home">
+            <div class="kubcha  "> <i class="fa-solid fa-marker"></i> <p>Copywriting </p></div>
+            <div class="kubcha  "> <div class="d-flex"><i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i><i class="fa-brands fa-square-js"></i></div> <p>Html, Css, JavaScript  </p></div>
+            <div class="kubcha  "> <i class="fa-brands fa-react"></i> <p>ReactJs,   </p></div>
+</div>
+           
+          </div>
+          <div class="kotta-home"><i class="fa-solid fa-circle-check"></i><p>Becoming a senior level developer in the future. Become a Senior Marketer and Head of Your Own Marketing and Dog Marketing Company!!!</p></div>
+
+        </div>
+        <hr>
       </div>
       <div class="msga">
-          <form class="formalar " action="#">
-            <input class="form" id="name" required  type="text" placeholder="Name" />
-            <input
-             required 
-              class="form"
-              minlength="9"
-              maxlength="13"
-              id="email"
-              type="tel"
-              placeholder="+998"
-            />
+        <form class="formalar" action="#">
+          <input
+            class="form"
+            id="name"
+            required
+            type="text"
+            placeholder="Name"
+          />
+          <input
+            required
+            class="form"
+            minlength="9"
+            maxlength="13"
+            id="email"
+            type="tel"
+            placeholder="+998"
+          />
 
-            <textarea id="message" required rows="3" cols="20" wrap="soft" placeholder="Leave your comment..." minlength="1"
-              maxlength="infinity" class="form"></textarea>
-            <button class="btn " onclick="sendMail()">Submit</button>
-          </form>
-        </div>
+          <textarea
+            id="message"
+            required
+            rows="3"
+            cols="20"
+            wrap="soft"
+            placeholder="Leave your comment..."
+            minlength="1"
+            maxlength="infinity"
+            class="form"
+          ></textarea>
+          <button class="btn" onclick="sendMail()">Submit</button>
+        </form>
+      </div>
     </div>
 
     <script src="./script.js"></script>
-
-    <!-- <script
+ <script
       src="https://kit.fontawesome.com/c4df4f6f07.js"
       crossorigin="anonymous"
-    ></>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-
-    <script>
-      const form = document.querySelector(".contact-form");
-      function sendMsg(e) {
-        e.preventDefault();
-
-        const name = document.querySelector(".name"),
-          email = document.querySelector(".email"),
-          msg = document.querySelector(".msg");
-
-        Email.send({
-          SecureToken: "7f9d7f78-bff7-4602-85ae-33d2082668d3",
-          To: "itluxuz@gmail.com",
-          From: email.value,
-          Subject: "contact Form ",
-          Body: msg.value,
-        }).then((message) => alert(message));
-      }
-
-      form.addEventListener("submit", sendMsg);
-    </script> -->
+    ></script>
+   
   </body>
 </html>

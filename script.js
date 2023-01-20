@@ -1,3 +1,7 @@
+
+
+
+
 const textarea = document.getElementById("message");
 textarea.addEventListener("keyup", (e) => {
   textarea.style.height = "auto";
