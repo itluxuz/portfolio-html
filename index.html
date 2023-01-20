@@ -26,6 +26,16 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@1,400;1,500;1,700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Kalam:wght@300;400;700&family=Lobster&family=Oswald:wght@200;700&family=Pacifico&family=Poppins:ital,wght@0,900;1,100;1,200;1,400;1,500;1,700;1,800&family=Righteous&display=swap"
       rel="stylesheet"
     />
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("q4CdGBE8zI_F5G4f_");
+      })();
+    </script>
   </head>
   <body>
     <div class="backround">
@@ -37,57 +47,189 @@
             /></a>
           </div>
 
-          <div class="main-clock ">
-        <div id="clock" class="progress-clock">
-	<button class="progress-clock__time-date" data-group="d" type="button">
-		<small data-unit="w">Sunday</small><br>
-		<span data-unit="mo">January</span>
-		<span data-unit="d">1</span>
-	</button>
-	<button class="progress-clock__time-digit" data-unit="h" data-group="h" type="button">12</button><span class="progress-clock__time-colon">:</span><button class="progress-clock__time-digit" data-unit="m" data-group="m" type="button">00</button><span class="progress-clock__time-colon">:</span><button class="progress-clock__time-digit" data-unit="s" data-group="s" type="button">00</button>
-	<span class="progress-clock__time-ampm" data-unit="ap">AM</span>
-	<svg class="progress-clock__rings" width="256" height="256" viewBox="0 0 256 256">
-		<defs>
-			<linearGradient id="pc-red" x1="1" y1="0.5" x2="0" y2="0.5">
-				<stop offset="0%" stop-color="hsl(343,90%,55%)" />
-				<stop offset="100%" stop-color="hsl(323,90%,55%)" />
-			</linearGradient>
-			<linearGradient id="pc-yellow" x1="1" y1="0.5" x2="0" y2="0.5">
-				<stop offset="0%" stop-color="hsl(43,90%,55%)" />
-				<stop offset="100%" stop-color="hsl(23,90%,55%)" />
-			</linearGradient>
-			<linearGradient id="pc-blue" x1="1" y1="0.5" x2="0" y2="0.5">
-				<stop offset="0%" stop-color="hsl(223,90%,55%)" />
-				<stop offset="100%" stop-color="hsl(203,90%,55%)" />
-			</linearGradient>
-			<linearGradient id="pc-purple" x1="1" y1="0.5" x2="0" y2="0.5">
-				<stop offset="0%" stop-color="hsl(283,90%,55%)" />
-				<stop offset="100%" stop-color="hsl(263,90%,55%)" />
-			</linearGradient>
-		</defs>
-		<!-- Days of Month -->
-		<g data-units="d">
-			<circle class="progress-clock__ring" cx="128" cy="128" r="74" fill="none" opacity="0.1" stroke="url(#pc-red)" stroke-width="12" />
-			<circle class="progress-clock__ring-fill" data-ring="mo" cx="128" cy="128" r="74" fill="none" stroke="url(#pc-red)" stroke-width="12" stroke-dasharray="465 465" stroke-dashoffset="465" stroke-linecap="round" transform="rotate(-90,128,128)" />
-		</g>
-		<!-- Hours of Day -->
-		<g data-units="h">
-			<circle class="progress-clock__ring" cx="128" cy="128" r="90" fill="none" opacity="0.1" stroke="url(#pc-yellow)" stroke-width="12" />
-			<circle class="progress-clock__ring-fill" data-ring="d" cx="128" cy="128" r="90" fill="none" stroke="url(#pc-yellow)" stroke-width="12" stroke-dasharray="565.5 565.5" stroke-dashoffset="565.5" stroke-linecap="round" transform="rotate(-90,128,128)" />
-		</g>
-		<!-- Minutes of Hour -->
-		<g data-units="m">
-			<circle class="progress-clock__ring" cx="128" cy="128" r="106" fill="none" opacity="0.1" stroke="url(#pc-blue)" stroke-width="12" />
-			<circle class="progress-clock__ring-fill" data-ring="h" cx="128" cy="128" r="106" fill="none" stroke="url(#pc-blue)" stroke-width="12" stroke-dasharray="666 666" stroke-dashoffset="666" stroke-linecap="round" transform="rotate(-90,128,128)" />
-		</g>
-		<!-- Seconds of Minute -->
-		<g data-units="s">
-			<circle class="progress-clock__ring" cx="128" cy="128" r="122" fill="none" opacity="0.1" stroke="url(#pc-purple)" stroke-width="12" />
-			<circle class="progress-clock__ring-fill" data-ring="m" cx="128" cy="128" r="122" fill="none" stroke="url(#pc-purple)" stroke-width="12" stroke-dasharray="766.5 766.5" stroke-dashoffset="766.5" stroke-linecap="round" transform="rotate(-90,128,128)" />
-		</g>
-	</svg>
-</div>
-</div>
+          <div class="main-clock">
+            <div id="clock" class="progress-clock">
+              <button
+                class="progress-clock__time-date"
+                data-group="d"
+                type="button"
+              >
+                <small data-unit="w">Sunday</small><br />
+                <span data-unit="mo">January</span>
+                <span data-unit="d">1</span>
+              </button>
+              <button
+                class="progress-clock__time-digit"
+                data-unit="h"
+                data-group="h"
+                type="button"
+              >
+                12</button
+              ><span class="progress-clock__time-colon">:</span
+              ><button
+                class="progress-clock__time-digit"
+                data-unit="m"
+                data-group="m"
+                type="button"
+              >
+                00</button
+              ><span class="progress-clock__time-colon">:</span
+              ><button
+                class="progress-clock__time-digit"
+                data-unit="s"
+                data-group="s"
+                type="button"
+              >
+                00
+              </button>
+              <span class="progress-clock__time-ampm" data-unit="ap">AM</span>
+              <svg
+                class="progress-clock__rings"
+                width="256"
+                height="256"
+                viewBox="0 0 256 256"
+              >
+                <defs>
+                  <linearGradient id="pc-red" x1="1" y1="0.5" x2="0" y2="0.5">
+                    <stop offset="0%" stop-color="hsl(343,90%,55%)" />
+                    <stop offset="100%" stop-color="hsl(323,90%,55%)" />
+                  </linearGradient>
+                  <linearGradient
+                    id="pc-yellow"
+                    x1="1"
+                    y1="0.5"
+                    x2="0"
+                    y2="0.5"
+                  >
+                    <stop offset="0%" stop-color="hsl(43,90%,55%)" />
+                    <stop offset="100%" stop-color="hsl(23,90%,55%)" />
+                  </linearGradient>
+                  <linearGradient id="pc-blue" x1="1" y1="0.5" x2="0" y2="0.5">
+                    <stop offset="0%" stop-color="hsl(223,90%,55%)" />
+                    <stop offset="100%" stop-color="hsl(203,90%,55%)" />
+                  </linearGradient>
+                  <linearGradient
+                    id="pc-purple"
+                    x1="1"
+                    y1="0.5"
+                    x2="0"
+                    y2="0.5"
+                  >
+                    <stop offset="0%" stop-color="hsl(283,90%,55%)" />
+                    <stop offset="100%" stop-color="hsl(263,90%,55%)" />
+                  </linearGradient>
+                </defs>
+                <!-- Days of Month -->
+                <g data-units="d">
+                  <circle
+                    class="progress-clock__ring"
+                    cx="128"
+                    cy="128"
+                    r="74"
+                    fill="none"
+                    opacity="0.1"
+                    stroke="url(#pc-red)"
+                    stroke-width="12"
+                  />
+                  <circle
+                    class="progress-clock__ring-fill"
+                    data-ring="mo"
+                    cx="128"
+                    cy="128"
+                    r="74"
+                    fill="none"
+                    stroke="url(#pc-red)"
+                    stroke-width="12"
+                    stroke-dasharray="465 465"
+                    stroke-dashoffset="465"
+                    stroke-linecap="round"
+                    transform="rotate(-90,128,128)"
+                  />
+                </g>
+                <!-- Hours of Day -->
+                <g data-units="h">
+                  <circle
+                    class="progress-clock__ring"
+                    cx="128"
+                    cy="128"
+                    r="90"
+                    fill="none"
+                    opacity="0.1"
+                    stroke="url(#pc-yellow)"
+                    stroke-width="12"
+                  />
+                  <circle
+                    class="progress-clock__ring-fill"
+                    data-ring="d"
+                    cx="128"
+                    cy="128"
+                    r="90"
+                    fill="none"
+                    stroke="url(#pc-yellow)"
+                    stroke-width="12"
+                    stroke-dasharray="565.5 565.5"
+                    stroke-dashoffset="565.5"
+                    stroke-linecap="round"
+                    transform="rotate(-90,128,128)"
+                  />
+                </g>
+                <!-- Minutes of Hour -->
+                <g data-units="m">
+                  <circle
+                    class="progress-clock__ring"
+                    cx="128"
+                    cy="128"
+                    r="106"
+                    fill="none"
+                    opacity="0.1"
+                    stroke="url(#pc-blue)"
+                    stroke-width="12"
+                  />
+                  <circle
+                    class="progress-clock__ring-fill"
+                    data-ring="h"
+                    cx="128"
+                    cy="128"
+                    r="106"
+                    fill="none"
+                    stroke="url(#pc-blue)"
+                    stroke-width="12"
+                    stroke-dasharray="666 666"
+                    stroke-dashoffset="666"
+                    stroke-linecap="round"
+                    transform="rotate(-90,128,128)"
+                  />
+                </g>
+                <!-- Seconds of Minute -->
+                <g data-units="s">
+                  <circle
+                    class="progress-clock__ring"
+                    cx="128"
+                    cy="128"
+                    r="122"
+                    fill="none"
+                    opacity="0.1"
+                    stroke="url(#pc-purple)"
+                    stroke-width="12"
+                  />
+                  <circle
+                    class="progress-clock__ring-fill"
+                    data-ring="m"
+                    cx="128"
+                    cy="128"
+                    r="122"
+                    fill="none"
+                    stroke="url(#pc-purple)"
+                    stroke-width="12"
+                    stroke-dasharray="766.5 766.5"
+                    stroke-dashoffset="766.5"
+                    stroke-linecap="round"
+                    transform="rotate(-90,128,128)"
+                  />
+                </g>
+              </svg>
+            </div>
+          </div>
 
           <div class="menu d-flex gap-3">
             <a href="./index.html" class="menu-btn"> <p>Home</p></a>
@@ -97,49 +239,94 @@
         </div>
       </div>
     </div>
-    <div class="main ">
-         <div class="container">
-        <div class="main-head d-flex  align-items-center justify-content-evenly ">
-            
-<section class="typing-container  ">
-     <h5 class="auto-typing-1">Hello. My name's Adbulaziz</h5>  
-    <p class="auto-typing-2" >I'm a 
-        <span class=" typing-text"> 
-        </span>
-    </p>
-   <div class="socials">
-    <a href="https://www.instagram.com/it_lux_uzb/"><i class="fa-brands fa-instagram"></i></a>
-    <a href="https://t.me/az1zov1ch_a"><i class="fa-brands fa-telegram"></i></a>
-    <a href="https://github.com/itluxuz"><i class="fa-brands fa-github"></i></a>
-    <a href="tel:+998977401448"><i class="fa-solid fa-phone"></i></a>
-   </div>
-  
-</section>
-
-           
-            <img class="my-photo img-fluid" src="./my-photo.png" alt="">
-        </div>
-        <div class="main-text d-flex  ">
-                <ul>
-                    <li><span>Name :</span> Latifjonov Abdulaziz Azizovich </li>
-                    <li><span>Year: </span>2006.02.18 </li>
-                    <li><span>Hard Skills:</span> Front End, SMM, Mobilography </li>
-                    <li><span>Soft Skills:</span> Html, CSS, Bootstrap, JavaScript, ReactJS </li>
-                    <li><span>Target :</span> Opening a large IT and Marketing company</li>
-                </ul> 
-                
+    <div class="main">
+      <div class="container">
+        <div class="main-head d-flex align-items-center justify-content-evenly">
+          <section class="typing-container">
+            <h5 class="auto-typing-1">Hello. My name's Adbulaziz</h5>
+            <p class="auto-typing-2">
+              I'm a
+              <span class="typing-text"> </span>
+            </p>
+            <div class="socials">
+              <a href="https://www.instagram.com/it_lux_uzb/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://t.me/az1zov1ch_a"
+                ><i class="fa-brands fa-telegram"></i
+              ></a>
+              <a href="https://github.com/itluxuz"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="tel:+998977401448"><i class="fa-solid fa-phone"></i></a>
             </div>
+          </section>
 
+          <img class="my-photo img-fluid" src="./my-photo.png" alt="" />
+        </div>
+        <div class="main-text d-flex">
+          <ul>
+            <li><span>Name :</span> Latifjonov Abdulaziz Azizovich</li>
+            <li><span>Year: </span>2006.02.18</li>
+            <li><span>Hard Skills:</span> Front End, SMM, Mobilography</li>
+            <li>
+              <span>Soft Skills:</span> Html, CSS, Bootstrap, JavaScript,
+              ReactJS
+            </li>
+            <li>
+              <span>Target :</span> Opening a large IT and Marketing company
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+      <div class="msga">
+          <form class="formalar " action="#">
+            <input class="form" id="name" required  type="text" placeholder="Name" />
+            <input
+             required 
+              class="form"
+              minlength="9"
+              maxlength="13"
+              id="email"
+              type="tel"
+              placeholder="+998"
+            />
 
-</div>
-</div>
+            <textarea id="message" required rows="3" cols="20" wrap="soft" placeholder="Leave your comment..." minlength="1"
+              maxlength="infinity" class="form"></textarea>
+            <button class="btn " onclick="sendMail()">Submit</button>
+          </form>
+        </div>
     </div>
-    <script src="./script.js"></script>
-    <script src="https://kit.fontawesome.com/c4df4f6f07.js" crossorigin="anonymous"></script>
 
+    <script src="./script.js"></script>
+
+    <!-- <script
+      src="https://kit.fontawesome.com/c4df4f6f07.js"
+      crossorigin="anonymous"
+    ></>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+      const form = document.querySelector(".contact-form");
+      function sendMsg(e) {
+        e.preventDefault();
+
+        const name = document.querySelector(".name"),
+          email = document.querySelector(".email"),
+          msg = document.querySelector(".msg");
+
+        Email.send({
+          SecureToken: "7f9d7f78-bff7-4602-85ae-33d2082668d3",
+          To: "itluxuz@gmail.com",
+          From: email.value,
+          Subject: "contact Form ",
+          Body: msg.value,
+        }).then((message) => alert(message));
+      }
+
+      form.addEventListener("submit", sendMsg);
+    </script> -->
   </body>
 </html>
-
-
-            
-
