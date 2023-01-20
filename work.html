@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Azizovich FrontDev</title>
     <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="clock.css" />
-
+    <link rel="stylesheet" href="clock.css" />
 
     <link
       rel="shortcut icon"
@@ -27,6 +26,16 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@1,400;1,500;1,700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Kalam:wght@300;400;700&family=Lobster&family=Oswald:wght@200;700&family=Pacifico&family=Poppins:ital,wght@0,900;1,100;1,200;1,400;1,500;1,700;1,800&family=Righteous&display=swap"
       rel="stylesheet"
     />
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("q4CdGBE8zI_F5G4f_");
+      })();
+    </script>
   </head>
   <body>
     <div class="backround">
@@ -38,61 +47,189 @@
             /></a>
           </div>
 
-
-
-
-          <div class="main-clock ">
-        <div id="clock" class="progress-clock">
-	<button class="progress-clock__time-date" data-group="d" type="button">
-		<small data-unit="w">Sunday</small><br>
-		<span data-unit="mo">January</span>
-		<span data-unit="d">1</span>
-	</button>
-	<button class="progress-clock__time-digit" data-unit="h" data-group="h" type="button">12</button><span class="progress-clock__time-colon">:</span><button class="progress-clock__time-digit" data-unit="m" data-group="m" type="button">00</button><span class="progress-clock__time-colon">:</span><button class="progress-clock__time-digit" data-unit="s" data-group="s" type="button">00</button>
-	<span class="progress-clock__time-ampm" data-unit="ap">AM</span>
-	<svg class="progress-clock__rings" width="256" height="256" viewBox="0 0 256 256">
-		<defs>
-			<linearGradient id="pc-red" x1="1" y1="0.5" x2="0" y2="0.5">
-				<stop offset="0%" stop-color="hsl(343,90%,55%)" />
-				<stop offset="100%" stop-color="hsl(323,90%,55%)" />
-			</linearGradient>
-			<linearGradient id="pc-yellow" x1="1" y1="0.5" x2="0" y2="0.5">
-				<stop offset="0%" stop-color="hsl(43,90%,55%)" />
-				<stop offset="100%" stop-color="hsl(23,90%,55%)" />
-			</linearGradient>
-			<linearGradient id="pc-blue" x1="1" y1="0.5" x2="0" y2="0.5">
-				<stop offset="0%" stop-color="hsl(223,90%,55%)" />
-				<stop offset="100%" stop-color="hsl(203,90%,55%)" />
-			</linearGradient>
-			<linearGradient id="pc-purple" x1="1" y1="0.5" x2="0" y2="0.5">
-				<stop offset="0%" stop-color="hsl(283,90%,55%)" />
-				<stop offset="100%" stop-color="hsl(263,90%,55%)" />
-			</linearGradient>
-		</defs>
-		<!-- Days of Month -->
-		<g data-units="d">
-			<circle class="progress-clock__ring" cx="128" cy="128" r="74" fill="none" opacity="0.1" stroke="url(#pc-red)" stroke-width="12" />
-			<circle class="progress-clock__ring-fill" data-ring="mo" cx="128" cy="128" r="74" fill="none" stroke="url(#pc-red)" stroke-width="12" stroke-dasharray="465 465" stroke-dashoffset="465" stroke-linecap="round" transform="rotate(-90,128,128)" />
-		</g>
-		<!-- Hours of Day -->
-		<g data-units="h">
-			<circle class="progress-clock__ring" cx="128" cy="128" r="90" fill="none" opacity="0.1" stroke="url(#pc-yellow)" stroke-width="12" />
-			<circle class="progress-clock__ring-fill" data-ring="d" cx="128" cy="128" r="90" fill="none" stroke="url(#pc-yellow)" stroke-width="12" stroke-dasharray="565.5 565.5" stroke-dashoffset="565.5" stroke-linecap="round" transform="rotate(-90,128,128)" />
-		</g>
-		<!-- Minutes of Hour -->
-		<g data-units="m">
-			<circle class="progress-clock__ring" cx="128" cy="128" r="106" fill="none" opacity="0.1" stroke="url(#pc-blue)" stroke-width="12" />
-			<circle class="progress-clock__ring-fill" data-ring="h" cx="128" cy="128" r="106" fill="none" stroke="url(#pc-blue)" stroke-width="12" stroke-dasharray="666 666" stroke-dashoffset="666" stroke-linecap="round" transform="rotate(-90,128,128)" />
-		</g>
-		<!-- Seconds of Minute -->
-		<g data-units="s">
-			<circle class="progress-clock__ring" cx="128" cy="128" r="122" fill="none" opacity="0.1" stroke="url(#pc-purple)" stroke-width="12" />
-			<circle class="progress-clock__ring-fill" data-ring="m" cx="128" cy="128" r="122" fill="none" stroke="url(#pc-purple)" stroke-width="12" stroke-dasharray="766.5 766.5" stroke-dashoffset="766.5" stroke-linecap="round" transform="rotate(-90,128,128)" />
-		</g>
-	</svg>
-</div>
-</div>
-
+          <div class="main-clock">
+            <div id="clock" class="progress-clock">
+              <button
+                class="progress-clock__time-date"
+                data-group="d"
+                type="button"
+              >
+                <small data-unit="w">Sunday</small><br />
+                <span data-unit="mo">January</span>
+                <span data-unit="d">1</span>
+              </button>
+              <button
+                class="progress-clock__time-digit"
+                data-unit="h"
+                data-group="h"
+                type="button"
+              >
+                12</button
+              ><span class="progress-clock__time-colon">:</span
+              ><button
+                class="progress-clock__time-digit"
+                data-unit="m"
+                data-group="m"
+                type="button"
+              >
+                00</button
+              ><span class="progress-clock__time-colon">:</span
+              ><button
+                class="progress-clock__time-digit"
+                data-unit="s"
+                data-group="s"
+                type="button"
+              >
+                00
+              </button>
+              <span class="progress-clock__time-ampm" data-unit="ap">AM</span>
+              <svg
+                class="progress-clock__rings"
+                width="256"
+                height="256"
+                viewBox="0 0 256 256"
+              >
+                <defs>
+                  <linearGradient id="pc-red" x1="1" y1="0.5" x2="0" y2="0.5">
+                    <stop offset="0%" stop-color="hsl(343,90%,55%)" />
+                    <stop offset="100%" stop-color="hsl(323,90%,55%)" />
+                  </linearGradient>
+                  <linearGradient
+                    id="pc-yellow"
+                    x1="1"
+                    y1="0.5"
+                    x2="0"
+                    y2="0.5"
+                  >
+                    <stop offset="0%" stop-color="hsl(43,90%,55%)" />
+                    <stop offset="100%" stop-color="hsl(23,90%,55%)" />
+                  </linearGradient>
+                  <linearGradient id="pc-blue" x1="1" y1="0.5" x2="0" y2="0.5">
+                    <stop offset="0%" stop-color="hsl(223,90%,55%)" />
+                    <stop offset="100%" stop-color="hsl(203,90%,55%)" />
+                  </linearGradient>
+                  <linearGradient
+                    id="pc-purple"
+                    x1="1"
+                    y1="0.5"
+                    x2="0"
+                    y2="0.5"
+                  >
+                    <stop offset="0%" stop-color="hsl(283,90%,55%)" />
+                    <stop offset="100%" stop-color="hsl(263,90%,55%)" />
+                  </linearGradient>
+                </defs>
+                <!-- Days of Month -->
+                <g data-units="d">
+                  <circle
+                    class="progress-clock__ring"
+                    cx="128"
+                    cy="128"
+                    r="74"
+                    fill="none"
+                    opacity="0.1"
+                    stroke="url(#pc-red)"
+                    stroke-width="12"
+                  />
+                  <circle
+                    class="progress-clock__ring-fill"
+                    data-ring="mo"
+                    cx="128"
+                    cy="128"
+                    r="74"
+                    fill="none"
+                    stroke="url(#pc-red)"
+                    stroke-width="12"
+                    stroke-dasharray="465 465"
+                    stroke-dashoffset="465"
+                    stroke-linecap="round"
+                    transform="rotate(-90,128,128)"
+                  />
+                </g>
+                <!-- Hours of Day -->
+                <g data-units="h">
+                  <circle
+                    class="progress-clock__ring"
+                    cx="128"
+                    cy="128"
+                    r="90"
+                    fill="none"
+                    opacity="0.1"
+                    stroke="url(#pc-yellow)"
+                    stroke-width="12"
+                  />
+                  <circle
+                    class="progress-clock__ring-fill"
+                    data-ring="d"
+                    cx="128"
+                    cy="128"
+                    r="90"
+                    fill="none"
+                    stroke="url(#pc-yellow)"
+                    stroke-width="12"
+                    stroke-dasharray="565.5 565.5"
+                    stroke-dashoffset="565.5"
+                    stroke-linecap="round"
+                    transform="rotate(-90,128,128)"
+                  />
+                </g>
+                <!-- Minutes of Hour -->
+                <g data-units="m">
+                  <circle
+                    class="progress-clock__ring"
+                    cx="128"
+                    cy="128"
+                    r="106"
+                    fill="none"
+                    opacity="0.1"
+                    stroke="url(#pc-blue)"
+                    stroke-width="12"
+                  />
+                  <circle
+                    class="progress-clock__ring-fill"
+                    data-ring="h"
+                    cx="128"
+                    cy="128"
+                    r="106"
+                    fill="none"
+                    stroke="url(#pc-blue)"
+                    stroke-width="12"
+                    stroke-dasharray="666 666"
+                    stroke-dashoffset="666"
+                    stroke-linecap="round"
+                    transform="rotate(-90,128,128)"
+                  />
+                </g>
+                <!-- Seconds of Minute -->
+                <g data-units="s">
+                  <circle
+                    class="progress-clock__ring"
+                    cx="128"
+                    cy="128"
+                    r="122"
+                    fill="none"
+                    opacity="0.1"
+                    stroke="url(#pc-purple)"
+                    stroke-width="12"
+                  />
+                  <circle
+                    class="progress-clock__ring-fill"
+                    data-ring="m"
+                    cx="128"
+                    cy="128"
+                    r="122"
+                    fill="none"
+                    stroke="url(#pc-purple)"
+                    stroke-width="12"
+                    stroke-dasharray="766.5 766.5"
+                    stroke-dashoffset="766.5"
+                    stroke-linecap="round"
+                    transform="rotate(-90,128,128)"
+                  />
+                </g>
+              </svg>
+            </div>
+          </div>
 
           <div class="menu d-flex gap-3">
             <a href="./index.html" class="menu-btn"> <p>Home</p></a>
@@ -102,17 +239,36 @@
         </div>
       </div>
     </div>
-    <div class="main ">
-         <div class="container">
-            <h3>Soon. Data will be added</h3>
-      
+    <div class="main">
+      <div class="container">
+         <div id="hello-wrapper">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 54"><path class="hello" d="M150,191.08s9.86-15.41,9.17-31.08c-.46-10.46-5.87-8.46-7-4.37a54.5,54.5,0,0,0-1.54,9.24c-1.15,11.69-.58,19.5-.5,35.75,0,.83.67,1.16,1.09.88s1.25-1.7,5.15-9.81c1.5-3.12,3.75-5.12,5.85-4.69,1.4.29,2.66-.05,1.78,8-.33,3,.92,7.31,3.67,6.81,1.35-.25,2.81-1.31,5.54-3.81s9.7-8.08,5-11.46c-2.75-2-7.25,3.19-6.32,8.47.32,1.82,2.17,8.46,10.32,6.61,8.46-1.92,25.42-45,15.38-49.12-9.69-4-11.47,55.06,2.13,49.33,6.63-2.79,26-38.66,15.88-49.08-7-7.21-13.48,46.32-.29,49.21,2.67.58,7.5-2.84,10.17-10.53,1-2.87,4.58-3.81,4.58-3.81s-6.27,1.24-5.12,9.13c.46,3.17,4.54,6.92,9,4.75,4.63-2.25,5.48-7,4.79-11.29-.54-3.37-2.75-4.09-3.77-3.81-1.39.38-3.41,3.21,0,7.81,4,5.42,12.46,2.29,13.33-2.29" transform="translate(-148 -150)"/></svg>
 </div>
-    </div>
-    <script src="./script.js"></script>
-    <script src="https://kit.fontawesome.com/c4df4f6f07.js" crossorigin="anonymous"></script>
+        
+        
+      </div>
+      <div class="msga">
+          <form class="formalar " action="#">
+            <input class="form" id="name" required  type="text" placeholder="Name" />
+            <input
+             required 
+              class="form"
+              minlength="9"
+              maxlength="13"
+              id="email"
+              type="tel"
+              placeholder="+998"
+            />
 
+            <textarea id="message" required rows="3" cols="20" wrap="soft" placeholder="Leave your comment..." minlength="1"
+              maxlength="infinity" class="form"></textarea>
+            <button class="btn " onclick="sendMail()">Submit</button>
+          </form>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+    
   </body>
 </html>
-
-
-          

@@ -314,3 +314,40 @@ textarea::-webkit-scrollbar{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#hello-wrapper {
+  width: 50vw;
+  margin: 10vh auto;
+}
+
+.hello {
+  fill:none;
+  stroke:#000;
+  stroke-miterlimit:10;
+  stroke-linecap: round;
+  stroke-width: 3;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: write 5s ease-in-out infinite;
+}
+
+@keyframes write {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
