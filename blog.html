@@ -243,23 +243,78 @@
     </div>
     <div class="main">
       <div class="container">
-
-        
-        
-
-  <div class="swiper mySwiper">
+<div class="d-block d-md-flex obshi-blog align-items-center   p-3 m-2">
+        <div class="title-blog">
+          <p class="sana-blog" > 24.12.2022 </p>
+          <p class="tema-blog" > "Smm"ni tamomladim  </p>
+          <hr/>
+          <p class="malumot-blog" > 3 oy o'qib, mana bugun Smm ni tamomladim. Juda maroqli kun bo'ldi. Men Sertifikat oldim.  </p>
+          </div>
+<div class="swiper mySwiper">
     <div class="swiper-wrapper">
-      <img class="swiper-slide" src="./me1.png" >
-      <img class="swiper-slide" src="./me2.png" >
-      <img class="swiper-slide" src="./me3.png" >
-      <img class="swiper-slide" src="./me4.png" >
-
-     
+      <img src="./1.jpg" class="swiper-slide" alt="">
+      <img src="./2.jpg" class="swiper-slide" alt="">
+      <img src="./3.jpg" class="swiper-slide" alt="">
+      <img src="./4.jpg" class="swiper-slide" alt="">
     </div>
+    <div class="swiper-scrollbar"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
   </div>
-        
-      </div>
-      <div class="msga">
+
+  
+  </div>
+  <div class="d-block d-md-flex obshi-blog align-items-center   p-3 m-2">
+        <div class="title-blog">
+          <p class="sana-blog" > 24.12.2022 </p>
+          <p class="tema-blog" > "Smm"ni tamomladim  </p>
+          <hr/>
+          <p class="malumot-blog" > 3 oy o'qib, mana bugun Smm ni tamomladim. Juda maroqli kun bo'ldi. Men Sertifikat oldim.  </p>
+          </div>
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <img src="./1.jpg" class="swiper-slide" alt="">
+      <img src="./2.jpg" class="swiper-slide" alt="">
+      <img src="./3.jpg" class="swiper-slide" alt="">
+      <img src="./4.jpg" class="swiper-slide" alt="">
+    </div>
+    <div class="swiper-scrollbar"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+  
+  </div><div class="d-block d-md-flex obshi-blog align-items-center   p-3 m-2">
+        <div class="title-blog">
+          <p class="sana-blog" > 24.12.2022 </p>
+          <p class="tema-blog" > "Smm"ni tamomladim  </p>
+          <hr/>
+          <p class="malumot-blog" > 3 oy o'qib, mana bugun Smm ni tamomladim. Juda maroqli kun bo'ldi. Men Sertifikat oldim.  </p>
+          </div>
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <img src="./1.jpg" class="swiper-slide" alt="">
+      <img src="./2.jpg" class="swiper-slide" alt="">
+      <img src="./3.jpg" class="swiper-slide" alt="">
+      <img src="./4.jpg" class="swiper-slide" alt="">
+    </div>
+    <div class="swiper-scrollbar"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+  
+  </div>
+  
+  
+
+
+
+
+
+
+
+<div class="msga">
           <form class="formalar " action="#">
             <input class="form" id="name" required  type="text" placeholder="Name" />
             <input
@@ -277,14 +332,108 @@
             <button class="btn " onclick="sendMail()">Submit</button>
           </form>
         </div>
+        
+  
+  </div>
+        
+      </div>
+      
     </div>
 
     <script src="./script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
- <script>
+  <script>
     var swiper = new Swiper(".mySwiper", {
-      effect: "cards",
-      grabCursor: true,
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        hide: true,
+      },
+    });
+  </script>
+   <script>
+    /* ========
+Debugger plugin, simple demo plugin to console.log some of callbacks
+======== */
+    function myPlugin({ swiper, extendParams, on }) {
+      extendParams({
+        debugger: false,
+      });
+
+      on('init', () => {
+        if (!swiper.params.debugger) return;
+        console.log('init');
+      });
+      on('click', (swiper, e) => {
+        if (!swiper.params.debugger) return;
+        console.log('click');
+      });
+      on('tap', (swiper, e) => {
+        if (!swiper.params.debugger) return;
+        console.log('tap');
+      });
+      on('doubleTap', (swiper, e) => {
+        if (!swiper.params.debugger) return;
+        console.log('doubleTap');
+      });
+      on('sliderMove', (swiper, e) => {
+        if (!swiper.params.debugger) return;
+        console.log('sliderMove');
+      });
+      on('slideChange', () => {
+        if (!swiper.params.debugger) return;
+        console.log(
+          'slideChange',
+          swiper.previousIndex,
+          '->',
+          swiper.activeIndex
+        );
+      });
+      on('slideChangeTransitionStart', () => {
+        if (!swiper.params.debugger) return;
+        console.log('slideChangeTransitionStart');
+      });
+      on('slideChangeTransitionEnd', () => {
+        if (!swiper.params.debugger) return;
+        console.log('slideChangeTransitionEnd');
+      });
+      on('transitionStart', () => {
+        if (!swiper.params.debugger) return;
+        console.log('transitionStart');
+      });
+      on('transitionEnd', () => {
+        if (!swiper.params.debugger) return;
+        console.log('transitionEnd');
+      });
+      on('fromEdge', () => {
+        if (!swiper.params.debugger) return;
+        console.log('fromEdge');
+      });
+      on('reachBeginning', () => {
+        if (!swiper.params.debugger) return;
+        console.log('reachBeginning');
+      });
+      on('reachEnd', () => {
+        if (!swiper.params.debugger) return;
+        console.log('reachEnd');
+      });
+    }
+  </script>
+  
+  <script>
+    // Init Swiper
+    var swiper = new Swiper('.swiper', {
+      // Install Plugin To Swiper
+      modules: [myPlugin],
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      // Enable debugger
+      debugger: true,
     });
   </script>
     
