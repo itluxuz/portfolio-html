@@ -133,6 +133,7 @@ body {
 @media screen and (max-width: 600px) {
   .kotta-home{
   width: 230px !important;
+  height: 70px !important;
 }
 .ism-home{
   
@@ -159,11 +160,7 @@ body {
 .kotta-home p{
   font-size: 10px;
 }
-.kotta-home{ 
-  width: 360px !important;
-  height: 70px !important;
-   
-}
+
 
 .kubcha {
   width: 50px !important;
