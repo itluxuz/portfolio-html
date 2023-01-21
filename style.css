@@ -133,12 +133,32 @@ body {
   }
 }
 @media screen and (max-width: 600px) {
+  .img-work{
+  
+  width: 100px !important;
+  height: 100px !important;
+
+}
+
+
+.btn-work{
+  font-size: 10px !important;
+  
+  
+}
+.ism-work{
+  font-size:15px !important;
+  line-height: 5px !important;
+
+}
+.malumot-work{
+  font-size: 8px !important;
+}
   .kotta-home{
   width: 230px !important;
   height: 70px !important;
 }
 .ism-home{
-  
   width: 120px  !important;
   height: 100px  !important;
   
@@ -211,7 +231,29 @@ body {
   }
 }
 @media screen and (max-width: 350px) {
+  .img-work{
   
+  width: 70px !important;
+  height: 70px !important;
+  border: none !important;
+
+}
+
+
+.btn-work{
+  font-size: 6px !important;
+  margin: 0;
+  
+}
+.ism-work{
+  font-size:10px !important;
+  line-height: 5px !important;
+   height: 5px !important  ;
+margin: 0px;
+}
+.malumot-work{
+  font-size: 6px !important;
+}
 
   
 
@@ -537,3 +579,39 @@ border-radius: 15px;
 }
 
 
+.img-work{
+  border-radius: 10px;
+  border: #000 3px solid;
+  width: 150px;
+  height: 150px;
+
+}
+
+.title-work{
+  
+  background: #fff;
+  padding: 10px;
+  border-radius:20px ;
+  margin-bottom: 10px;
+}
+.btn-work{
+  font-size: 15px;
+  border: none;
+  background:#fd0000 ;
+  padding: 2px 5px;
+  border-radius: 15px;
+  color: #fff;
+  
+}
+.ism-work{
+  font-size: 20px;
+
+  height: 15px;
+}
+.malumot-work{
+  font-size: 10px;
+}
+.obshi-work{
+  border-radius: 20px;
+  padding: 10px;
+}
