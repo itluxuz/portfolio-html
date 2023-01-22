@@ -9,6 +9,7 @@
 
 body {
   background-color: #068a80;
+  transition: all 03s;
 }
 .header {
   display: flex;
@@ -85,6 +86,12 @@ body {
 .main-text ul li span {
   color: #fff;
 }
+.socials a {
+
+    font-size: 10px;
+    color: #fff;
+    
+  }
 
 @media screen and (max-width: 800px) {
     
@@ -286,6 +293,7 @@ margin: 0px;
     font-size: 13px;
   }
   .socials a {
+
     font-size: 10px;
     color: #fff;
   }
@@ -435,9 +443,7 @@ textarea::-webkit-scrollbar {
       object-fit: cover;
     }
 
-.socials .social {
-  color: #000;
-}
+
 
 .obshi-home {
   display: flex;
@@ -614,4 +620,72 @@ border-radius: 15px;
 .obshi-work{
   border-radius: 20px;
   padding: 10px;
+}
+
+
+
+
+ .social{
+  animation: shaking 300ms infinite ;
+  transition: all 03s;
+}
+
+.social:hover{
+  animation: shake 300ms  infinite ;
+}
+
+@keyframes shaking {
+  33% {
+    transform: rotate(10deg);
+  }
+  
+  66% {
+    transform: rotate(-10deg);
+  }
+  
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+
+/*
+{
+  animation: shake 0.82s cubic-bezier(.50,.20,.20,.97) infinite;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+}
+/* Defining the animation keyframes */
+
+@keyframes shake {
+  10%, 100% { transform: scale(1.5);  }
+ 
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: 20px 20px 20px -20px rgba(34, 60, 80, 0.2) inset;
+  background-color: #000000;
+  border-radius: 0px;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 200px;
+  background: linear-gradient(180deg, #00fbf7,#000000,#000000, #068a80);
 }
