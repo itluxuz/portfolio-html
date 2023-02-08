@@ -18,6 +18,7 @@ body {
   text-align: center;
 }
 .backround {
+width: 100%;
   background: #000;
   z-index: 100000;
 }
@@ -39,6 +40,7 @@ body {
   z-index: 99;
   background-color: #068a80;
   height: 100%;
+  
 }
 
 .my-photo {
@@ -576,6 +578,7 @@ border-radius: 15px;
 }
 .malumot-blog{
   font-size: 15px;
+  width: 100%;
 }
 .obshi-blog{
   border-radius: 20px;
