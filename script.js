@@ -30,7 +30,7 @@ function sendMail() {
 }
 
 var typingElement = document.querySelector(".typing-text");
-var typeArray = ["Programmer ", "SMM Manager", "Mobilographer"];
+var typeArray = ["Developer ", "SMM Manager", "Mobilograph"];
 var index = 0,
   isAdding = true,
   typeIndex = 0;
